@@ -30,13 +30,14 @@ body {
 .product-page {
   width: 100%;
   display: flex;
-  margin: 2rem;
+  margin: 2rem 2rem 1rem 2rem;
+  column-gap: 2rem;
 }
 
 .filter {
-  width: 15rem;
+  /* width: 15rem; */
   background-color: var(--white);
-  padding: 1rem;
+  padding: 2rem;
   position: static;
 }
 
@@ -64,8 +65,10 @@ body {
 }
 
 .cards-list {
-  display: flex;
-  background-color: var(--white);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  width: 99%;
 }
 
 .clear-all-btn {
@@ -130,4 +133,8 @@ body {
 .cat-img {
   width: 0.9rem;
   padding-left: 6px;
+}
+
+.product-card {
+  height: 25.6rem;
 }
