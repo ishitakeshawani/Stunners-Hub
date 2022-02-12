@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink-color: #fc2678;
+  --bg-color: #402f27;
+}
+
+body {
+  width: 100%;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.nav-link,
+.nav-link:hover {
+  color: var(--bg-color);
+}
+
+.active {
+  color: var(--pink-color);
+}
