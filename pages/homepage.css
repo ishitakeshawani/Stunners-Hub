@@ -29,14 +29,13 @@ body {
 .banner {
   background-image: url("/assets/banner.png");
   width: 100%;
-  height: 300px;
+  height: 18rem;
   object-fit: cover;
   margin-top: 1rem;
 }
 
 .image-btn {
-  margin-top: 13rem;
-  margin-left: 8rem;
+  margin: 13rem 0 0 8rem;
   background-color: var(--pink-color);
   border-radius: 5px;
 }
@@ -143,7 +142,7 @@ body {
   margin: 0 0.5rem;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 43em) {
   .category-list {
     display: flex;
     flex-direction: column;
