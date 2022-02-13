@@ -23,7 +23,7 @@ body {
 }
 
 .active {
-  color: var(--bg-color);
+  color: var(--pink-color);
 }
 
 .banner {

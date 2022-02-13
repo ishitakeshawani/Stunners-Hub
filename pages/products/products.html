@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Ishita Keshawani" />
+  <meta name="description" content="Products page of Stunners Hub" />
+  <meta name="keywords" content="beauty store,e-commerce,react.js" />
+  <link rel="stylesheet" href="https://felizui.netlify.app/styles/index.css" />
+  <link rel="stylesheet" href="/pages/products/products.css" />
+  <script src="https://kit.fontawesome.com/7744bfb8db.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="/assets/Stunners.png" />
+  <title>Products page</title>
+</head>
+
+<body>
+  <nav class="navbar semibold-font-weight">
+    <a class="nav-icon-link nav-link link-no-style" href="/index.html">
+      <img class="logoimage" src="/assets/Stunners.png" alt="" />
+      <span class="small-fontsize">Stunners Hub</span>
+    </a>
+    <a class="nav-link link-no-style" href="/index.html">Home</a>
+    <a class="nav-link link-no-style active" href="/pages/products/products.html">Products</a>
+    <div class="nav-last-items">
+      <div class="searchbar">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" class="search-input" placeholder="Search on Stunners Hub" />
+      </div>
+      <a href="http://" class="link-no-style nav-link nav-icon-link">
+        <i class="fa-regular fa-user"></i>
+        <span class="small-fontsize">Login</span>
+      </a>
+      <a href="http://" class="link-no-style nav-link nav-icon-link">
+        <i class="fa-regular fa-heart"></i>
+        <span class="small-fontsize">Wishlist</span>
+      </a>
+      <a href="http://" class="link-no-style nav-link nav-icon-link">
+        <img class="nav-icon"
+          src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-cart-ecommerce-flatart-icons-outline-flatarticons-4.png" />
+        <span class="small-fontsize">Cart</span>
+      </a>
+    </div>
+  </nav>
+  <div class="product-page">
+    <div class="filter">
+      <div class="filter-heading">
+        <div class="semibold-font-weight">FILTERS</div>
+        <button class="clear-all-btn bold-font-weight">CLEAR</button>
+      </div>
+      <div class="price-section">
+        <div class="price semibold-font-weight price-title">Price</div>
+        <div class="range">
+          <span>200</span>
+          <span>2500</span>
+          <span>5000</span>
+        </div>
+        <input type="range" min="200" max="5000" value="2500" class="slider" />
+      </div>
+      <div class="filter-category">
+        <div class="semibold-font-weight category-title">Category</div>
+        <div class="category-item">
+          Makeup
+          <img class="cat-img"
+            src="https://img.icons8.com/external-those-icons-lineal-those-icons/24/000000/external-down-arrows-those-icons-lineal-those-icons-7.png" />
+          <div class="category-item-list">
+            <div class="list">
+              <div class="inline-category-item">
+                <input type="checkbox" /><label for="input">Eyes</label>
+              </div>
+              <div class="inline-category-item">
+                <input type="checkbox" /><label for="input">Face</label>
+              </div>
+              <div class="inline-category-item">
+                <input type="checkbox" /><label for="input">Lips</label>
+              </div>
+              <div class="inline-category-item">
+                <input type="checkbox" /><label for="input">Nails</label>
+              </div>
+              <div class="inline-category-item">
+                <input type="checkbox" /><label for="input">Makeup Kits</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="category-item">
+          Skincare
+          <img class="cat-img"
+            src="https://img.icons8.com/external-those-icons-lineal-those-icons/24/000000/external-down-arrows-those-icons-lineal-those-icons-7.png" />
+          <div class="category-item-list">
+            <div class="list">
+              <div class="inline-category-item">
+                <input type="checkbox" /><label for="input">Cleaners</label>
+              </div>
+              <div class="inline-category-item">
+                <input type="checkbox" /><label for="input">Moisturizers</label>
+              </div>
+              <div class="inline-category-item">
+                <input type="checkbox" /><label for="input">Body care</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="category-item">
+          Haircare
+          <img class="cat-img"
+            src="https://img.icons8.com/external-those-icons-lineal-those-icons/24/000000/external-down-arrows-those-icons-lineal-those-icons-7.png" />
+          <div class="category-item-list">
+            <div class="list">
+              <div class="inline-category-item">
+                <input type="checkbox" /><label for="input">Shampoo</label>
+              </div>
+              <div class="inline-category-item">
+                <input type="checkbox" /><label for="input">Conditioner</label>
+              </div>
+              <div class="inline-category-item">
+                <input type="checkbox" /><label for="input">Hair Serum</label>
+              </div>
+              <div class="inline-category-item">
+                <input type="checkbox" /><label for="input">Hair oil</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="category-item">
+          Fragrances
+          <img class="cat-img"
+            src="https://img.icons8.com/external-those-icons-lineal-those-icons/24/000000/external-down-arrows-those-icons-lineal-those-icons-7.png" />
+
+          <div class="category-item-list">
+            <div class="list">
+              <div class="inline-category-item">
+                <input type="checkbox" /><label for="input">Perfumes</label>
+              </div>
+              <div class="inline-category-item">
+                <input type="checkbox" /><label for="input">Body Mists</label>
+              </div>
+              <div class="inline-category-item">
+                <input type="checkbox" /><label for="input">Deodorants</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rating-section">
+        <div class="rating-title semibold-font-weight">Rating</div>
+        <div class="inline-category-item">
+          <input type="radio" name="radio" /><label for="">4 star & above</label>
+        </div>
+        <div class="inline-category-item">
+          <input type="radio" name="radio" /><label for="">2 star & above</label>
+        </div>
+        <div class="inline-category-item">
+          <input type="radio" name="radio" /><label for="">2 star & above</label>
+        </div>
+        <div class="inline-category-item">
+          <input type="radio" name="radio" /><label for="">1 star & above</label>
+        </div>
+      </div>
+
+      <div class="sort-by">
+        <div class="sort-by-title semibold-font-weight">Sort by</div>
+        <div class="inline-category-item">
+          <input type="radio" name="radio" /><label for="">Price - Low to High</label>
+        </div>
+        <div class="inline-category-item">
+          <input type="radio" name="radio" /><label for="">Price - High to Low</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="all-prods semibold-font-weight">All Products</div> -->
+    <div class="cards-list">
+      <div class="card product-card">
+        <div class="card-padding">
+          <img class="product-img" src="/assets/product1.jpg" alt="" />
+          <div class="product-card-title bold-font-weight">
+            Nykaa Matte To Last ! Liquid Lipstick
+          </div>
+          <div class="card-mrp">
+            <span class="gray-color">MRP:</span> ₹599
+          </div>
+          <div class="rating small-fontsize">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="product-card-footer pink-color">
+          <i class="far fa-heart card-footer-icon"></i>
+          <button class="btn card-btn">Add to Cart</button>
+        </div>
+      </div>
+      <div class="card product-card">
+        <div class="card-padding">
+          <img class="product-img" src="/assets/product1.jpg" alt="" />
+          <div class="product-card-title bold-font-weight">
+            Nykaa Matte To Last ! Liquid Lipstick
+          </div>
+          <div class="card-mrp">
+            <span class="gray-color">MRP:</span> ₹599
+          </div>
+          <div class="rating small-fontsize">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="product-card-footer pink-color">
+          <i class="far fa-heart card-footer-icon"></i>
+          <button class="btn card-btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card product-card">
+        <div class="card-padding">
+          <img class="product-img" src="/assets/product1.jpg" alt="" />
+          <div class="product-card-title bold-font-weight">
+            Nykaa Matte To Last ! Liquid Lipstick
+          </div>
+          <div class="card-mrp">
+            <span class="gray-color">MRP:</span> ₹599
+          </div>
+          <div class="rating small-fontsize">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="product-card-footer pink-color">
+          <i class="far fa-heart card-footer-icon"></i>
+          <button class="btn card-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

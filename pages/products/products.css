@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink-color: #fc2678;
+  --bg-color: #402f27;
+  --product-bgcolor: #f2f2f3;
+}
+
+body {
+  background-color: var(--product-bgcolor);
+}
+
+.navbar {
+  padding: 0;
+}
+
+.nav-link,
+.nav-link:hover {
+  color: var(--bg-color);
+}
+
+.active {
+  color: var(--pink-color);
+}
+
+.product-page {
+  width: 100%;
+  display: flex;
+  margin: 2rem 2rem 1rem 2rem;
+  column-gap: 2rem;
+}
+
+.filter {
+  /* width: 15rem; */
+  background-color: var(--white);
+  padding: 2rem;
+  position: static;
+}
+
+.price-title,
+.category-title,
+.rating-title,
+.sort-by-title {
+  font-size: 1.2rem;
+}
+
+.rating-title {
+  margin-bottom: 1rem;
+}
+
+.sort-by-title {
+  margin: 1rem 0 1rem 0;
+}
+
+.filter-heading {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.cards-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  width: 99%;
+}
+
+.clear-all-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--pink-color);
+  border-bottom: 1px solid var(--pink-color);
+  cursor: pointer;
+}
+
+.slider,
+.range {
+  width: 12rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  margin-bottom: 1rem;
+}
+
+.price-section {
+  margin: 1rem 0;
+}
+
+.filter-category {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.7rem;
+  cursor: default;
+  margin: 1rem 0;
+}
+
+.category-item-list {
+  display: none;
+}
+
+.category-item:hover .category-item-list {
+  display: block;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: none;
+  font-size: 1rem;
+  background-color: transparent;
+  color: var(--bg-color);
+}
+
+.inline-category-item {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.cat-img {
+  width: 0.9rem;
+  padding-left: 6px;
+}
+
+.product-card {
+  height: 25.6rem;
+}
