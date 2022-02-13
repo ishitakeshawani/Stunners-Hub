@@ -151,6 +151,15 @@ body {
   margin: 0 0.5rem;
 }
 
+.nav-link,
+.nav-link:hover {
+  color: var(--bg-color);
+}
+
+.active {
+  color: var(--pink-color);
+}
+
 @media only screen and (max-width: 48rem) {
   .cart-page-item {
     flex-direction: column;
