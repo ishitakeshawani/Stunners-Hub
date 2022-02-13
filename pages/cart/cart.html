@@ -11,7 +11,7 @@
       rel="stylesheet"
       href="https://felizui.netlify.app/styles/index.css"
     />
-    <link rel="stylesheet" href="/pages/home/homepage.css" />
+    <link rel="stylesheet" href="/pages/cart/cart.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -20,7 +20,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="icon" href="/assets/Stunners.png" />
-    <title>Stunners-Hub</title>
+    <title>Cart Page</title>
   </head>
 
   <body>
@@ -29,8 +29,10 @@
         <img class="logoimage" src="/assets/Stunners.png" alt="" />
         <span class="small-fontsize">Stunners Hub</span>
       </a>
-      <a class="nav-link link-no-style active" href="">Home</a>
-      <a class="nav-link link-no-style" href="/pages/products/products.html">Products</a>
+      <a class="nav-link link-no-style" href="/">Home</a>
+      <a class="nav-link link-no-style" href="/pages/products/products.html"
+        >Products</a
+      >
       <div class="nav-last-items">
         <div class="searchbar">
           <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -48,73 +50,71 @@
           <i class="fa-regular fa-heart"></i>
           <span class="small-fontsize">Wishlist</span>
         </a>
-        <a href="/pages/cart/cart.html" class="link-no-style nav-link nav-icon-link">
+        <a
+          href="/pages/cart/cart.html"
+          class="link-no-style nav-link nav-icon-link"
+        >
           <img
             class="nav-icon"
             src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-cart-ecommerce-flatart-icons-outline-flatarticons-4.png"
           />
-          <span class="small-fontsize">Cart</span>
+          <span class="small-fontsize active">Cart</span>
         </a>
       </div>
     </nav>
 
-    <div class="banner">
-      <button class="btn image-btn">Shop Now</button>
-    </div>
-
-    <div class="categories">
-      <div class="categories-title">Top Categories</div>
-      <div class="category-list">
-        <div class="category-list-item">
-          <div class="category-list-item-name">Makeup</div>
-          <img
-            class="category-list-item-image"
-            src="/assets/makeup.jpg"
-            alt="makeup-image"
-          />
+    <div class="cart-page">
+      <div class="cart-page-title semibold-font-weight">My Cart</div>
+      <div class="cart-page-item">
+        <div class="cart-product-card">
+          <div class="cart-product-img">
+            <img src="/assets/product1.jpg" alt="product-img" />
+          </div>
+          <div class="cart-product-details">
+            <div class="cart-product-name bold-font-weight">
+              Nykaa Matte To Last! <br />
+              Liquid Lipstick
+            </div>
+            <div class="cart-product-price bold-font-weight">
+              ₹599<span class="gray-color lastprice">₹599 </span>
+            </div>
+            <div class="cart-product-off">50% off</div>
+            <div class="product-quantity flex">
+              <div class="product-quantity-label">Quantity :</div>
+              <button class="cart-product-btn">+</button>
+              <div class="cart-product-number">1</div>
+              <button class="cart-product-btn">-</button>
+            </div>
+            <button class="btn cart-remove-btn">Remove from cart</button>
+            <button class="btn cart-wishlist-btn">Add to Wishlist</button>
+          </div>
         </div>
-        <div class="category-list-item">
-          <div class="category-list-item-name">Skincare</div>
-          <img
-            class="category-list-item-image"
-            src="/assets/skin.jpg"
-            alt="makeup-image"
-          />
+        <div class="price-details-card">
+          <div class="price-details-title bold-font-weight">PRICE DETAILS</div>
+          <hr />
+          <div class="price-details-first-section">
+            <div class="flex-row">
+              <div>Price(2 items)</div>
+              <div>₹599</div>
+            </div>
+            <div class="flex-row">
+              <div>Discount</div>
+              <div>-₹99</div>
+            </div>
+            <div class="flex-row">
+              <div>Delivery charges</div>
+              <div>₹99</div>
+            </div>
+          </div>
+          <hr />
+          <div class="flex-row">
+            <div class="bold-font-weight">Total Amount</div>
+            <div class="bold-font-weight">₹599</div>
+          </div>
+          <hr />
+          <div>You will be save ₹59 in this order.</div>
+          <button class="btn place-order">Place order</button>
         </div>
-        <div class="category-list-item">
-          <div class="category-list-item-name">Haircare</div>
-          <img
-            class="category-list-item-image"
-            src="/assets/hair.jpg"
-            alt="makeup-image"
-          />
-        </div>
-        <div class="category-list-item">
-          <div class="category-list-item-name">Fragrances</div>
-          <img
-            class="category-list-item-image"
-            src="/assets/Fragrances.jpg"
-            alt="makeup-image"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="onlyat-section">
-      <div class="onlyat-section-title">Only At Stunners Hub</div>
-      <div class="onlyat-list">
-        <img class="onlyat-item" src="/assets/collection1.jfif" alt="" />
-        <img class="onlyat-item" src="/assets/collection2.jfif" alt="" />
-      </div>
-    </div>
-
-    <div class="top-brands">
-      <div class="top-brands-title">Top Brands</div>
-      <div class="top-brands-list">
-        <img class="top-brands-item" src="/assets/brand1.jpg" alt="" />
-        <img class="top-brands-item" src="/assets/brand2.jpg" alt="" />
-        <img class="top-brands-item" src="/assets/brand3.jpg" alt="" />
-        <img class="top-brands-item" src="/assets/brand4.jpg" alt="" />
       </div>
     </div>
 
