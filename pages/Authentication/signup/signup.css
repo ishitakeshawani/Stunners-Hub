@@ -1,5 +1,5 @@
 .signup {
-  border: 1px soild black;
+  border: 1px soild var(--black);
   display: flex;
   justify-content: center;
   flex-direction: column;
