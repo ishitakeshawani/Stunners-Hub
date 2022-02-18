@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://felizui.netlify.app/styles/index.css"
     />
+    <link rel="stylesheet" href="/pages/Authentication/login/login.css" />
     <link rel="stylesheet" href="/pages/home/homepage.css" />
     <link
       rel="stylesheet"
@@ -25,12 +26,14 @@
 
   <body>
     <nav class="navbar semibold-font-weight">
-      <a class="nav-icon-link nav-link link-no-style" href="">
+      <a class="nav-icon-link nav-link link-no-style" href="/index.html">
         <img class="logoimage" src="/assets/Stunners.png" alt="" />
         <span class="small-fontsize">Stunners Hub</span>
       </a>
-      <a class="nav-link link-no-style active" href="">Home</a>
-      <a class="nav-link link-no-style" href="/pages/products/products.html">Products</a>
+      <a class="nav-link link-no-style active" href="/index.html">Home</a>
+      <a class="nav-link link-no-style" href="/pages/products/products.html"
+        >Products</a
+      >
       <div class="nav-last-items">
         <div class="searchbar">
           <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -40,15 +43,24 @@
             placeholder="Search on Stunners Hub"
           />
         </div>
-        <a href="/pages/Authentication/login/login.html" class="link-no-style nav-link nav-icon-link">
+        <a
+          href="/pages/Authentication/login/login.html"
+          class="link-no-style nav-link nav-icon-link"
+        >
           <i class="fa-regular fa-user"></i>
           <span class="small-fontsize">Login</span>
         </a>
-        <a href="/pages/wishlist/wishlist.html" class="link-no-style nav-link nav-icon-link">
+        <a
+          href="/pages/wishlist/wishlist.html"
+          class="link-no-style nav-link nav-icon-link"
+        >
           <i class="fa-regular fa-heart"></i>
           <span class="small-fontsize">Wishlist</span>
         </a>
-        <a href="/pages/cart/cart.html" class="link-no-style nav-link nav-icon-link">
+        <a
+          href="/pages/cart/cart.html"
+          class="link-no-style nav-link nav-icon-link"
+        >
           <img
             class="nav-icon"
             src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-cart-ecommerce-flatart-icons-outline-flatarticons-4.png"
@@ -58,63 +70,41 @@
       </div>
     </nav>
 
-    <div class="banner">
-      <button class="btn image-btn">Shop Now</button>
-    </div>
+    <div class="login-page">
+      <div class="login">
+        <h4 class="login-title">Login</h4>
 
-    <div class="categories">
-      <div class="categories-title">Top Categories</div>
-      <div class="category-list">
-        <div class="category-list-item">
-          <div class="category-list-item-name">Makeup</div>
-          <img
-            class="category-list-item-image"
-            src="/assets/makeup.jpg"
-            alt="makeup-image"
+        <div class="login-label"><label for="">Email address</label></div>
+        <input type="text" class="login-input" placeholder="xyz@gmail.com" />
+        <div><label for="" class="login-label">Password</label></div>
+        <div class="login-password">
+          <input
+            type="password"
+            class="login-password-input"
+            placeholder="password"
           />
+          <button class="login-icon button-style-none">
+            <i class="fa-regular fa-eye"></i>
+          </button>
         </div>
-        <div class="category-list-item">
-          <div class="category-list-item-name">Skincare</div>
-          <img
-            class="category-list-item-image"
-            src="/assets/skin.jpg"
-            alt="makeup-image"
-          />
+        <div class="flex">
+          <div>
+            <input type="checkbox" name="remember" id="" /><label
+              for=""
+              class="remember-label"
+              >Remember me</label
+            >
+          </div>
+          <div class="forgot-password semibold-font-weight">
+            Forgot your password?
+          </div>
         </div>
-        <div class="category-list-item">
-          <div class="category-list-item-name">Haircare</div>
-          <img
-            class="category-list-item-image"
-            src="/assets/hair.jpg"
-            alt="makeup-image"
-          />
-        </div>
-        <div class="category-list-item">
-          <div class="category-list-item-name">Fragrances</div>
-          <img
-            class="category-list-item-image"
-            src="/assets/Fragrances.jpg"
-            alt="makeup-image"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="onlyat-section">
-      <div class="onlyat-section-title">Only At Stunners Hub</div>
-      <div class="onlyat-list">
-        <img class="onlyat-item" src="/assets/collection1.jfif" alt="" />
-        <img class="onlyat-item" src="/assets/collection2.jfif" alt="" />
-      </div>
-    </div>
-
-    <div class="top-brands">
-      <div class="top-brands-title">Top Brands</div>
-      <div class="top-brands-list">
-        <img class="top-brands-item" src="/assets/brand1.jpg" alt="" />
-        <img class="top-brands-item" src="/assets/brand2.jpg" alt="" />
-        <img class="top-brands-item" src="/assets/brand3.jpg" alt="" />
-        <img class="top-brands-item" src="/assets/brand4.jpg" alt="" />
+        <button class="btn btn-login">Login</button>
+        <a
+          href="/pages/Authentication/signup/signup.html"
+          class="link-no-style signup-link"
+          >Create new account <i class="fa-solid fa-angle-right login-icon"></i>
+        </a>
       </div>
     </div>
 
