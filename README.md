@@ -59,9 +59,15 @@ It has mainly four-category products - Makeup, Skincare, Haircare, and Fragrance
 
 ## UI of the Website
 
-|![Screenshot (104)](https://user-images.githubusercontent.com/50510726/152957338-6d394bf1-50b0-45a5-a54f-07ddd30f172f.png)|![Screenshot (105)](https://user-images.githubusercontent.com/50510726/152957564-7547d1b2-7928-454b-aef7-1905987ccf2d.png) | 
+|![Screenshot (120)](https://user-images.githubusercontent.com/50510726/154857606-4b2e95ed-c875-4142-8294-3409e4e65be3.png)|![Screenshot (121)](https://user-images.githubusercontent.com/50510726/154857671-ec467861-4f19-4191-bda1-a63244de9d9d.png)| 
 |-|-|
-| Landing Page | Documentation Page |  
+| Home Page | Products listing Page |  
+| ![Screenshot (122)](https://user-images.githubusercontent.com/50510726/154857723-d871c70a-f355-4bba-a36e-59c8c9fef905.png) | ![Screenshot (123)](https://user-images.githubusercontent.com/50510726/154857741-fb77d45f-eeb2-4128-954f-07939a97ac88.png) |
+| Wishlist Page | Cart Page|
+| ![Screenshot (124)](https://user-images.githubusercontent.com/50510726/154857801-76408251-5ff6-4e76-8906-2e2fd40f7ca7.png) | ![Screenshot (125)](https://user-images.githubusercontent.com/50510726/154857847-e7f76c63-c669-4a35-9867-27d61f38400b.png) |
+| Login Page | Signup Page |
+
+
 <br/>
 
 ## Setup Steps
