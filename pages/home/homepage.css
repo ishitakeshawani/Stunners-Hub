@@ -205,6 +205,7 @@ body {
   /* display: flex; */
   position: absolute;
   right: 20px;
+  top: 1rem;
 }
 .openMenu {
   display: block;
