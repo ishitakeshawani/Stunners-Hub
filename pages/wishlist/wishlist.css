@@ -81,6 +81,9 @@ body {
   .product-card-footer {
     padding: 0;
   }
+  .hide-icon {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 48rem) {
@@ -95,6 +98,9 @@ body {
   .card-padding {
     padding: 10px 10px 0 10px;
   }
+  .hide-icon {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 30rem) {
@@ -105,5 +111,8 @@ body {
   }
   .card {
     width: 17rem;
+  }
+  .hide-icon {
+    display: none;
   }
 }

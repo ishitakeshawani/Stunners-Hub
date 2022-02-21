@@ -168,4 +168,7 @@ body {
   .cart-product-card{
       flex-direction: column;
   }
+  .hide-icon {
+    display: none;
+  }
 }

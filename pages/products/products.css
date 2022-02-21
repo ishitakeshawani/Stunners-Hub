@@ -145,9 +145,7 @@ body {
   height: 25.6rem;
 }
 
-.hide-icon{
-  display: none;
-}
+
 
 @media only screen and (max-width: 64em) {
   .wrapper {
@@ -156,6 +154,9 @@ body {
   .filter {
     width: 15rem;
     padding: 10px;
+  }
+  .hide-icon {
+    display: none;
   }
   .cards-list {
     display: grid;
@@ -185,6 +186,9 @@ body {
     overflow-x: hidden;
   }
   .filter {
+    display: none;
+  }
+  .hide-icon {
     display: none;
   }
   .cards-list {
@@ -232,6 +236,9 @@ body {
   }
   .card-padding {
     padding: 10px 10px 0 10px;
+  }
+  .hide-icon {
+    display: none;
   }
 }
 
