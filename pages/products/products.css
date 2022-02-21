@@ -16,8 +16,13 @@ body {
   overflow-x: hidden;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
+
 .navbar {
   padding: 0;
+  width: 100%;
 }
 
 .nav-link,
@@ -34,13 +39,13 @@ body {
   display: flex;
   margin: 2rem 2rem 1rem 2rem;
   column-gap: 2rem;
+  justify-content: center;
 }
 
 .filter {
-  /* width: 15rem; */
   background-color: var(--white);
   padding: 2rem;
-  position: static;
+  position: sticky;
 }
 
 .price-title,
@@ -68,8 +73,8 @@ body {
 .cards-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
-  width: 99%;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .clear-all-btn {
@@ -138,4 +143,115 @@ body {
 
 .product-card {
   height: 25.6rem;
+}
+
+@media only screen and (max-width: 64em) {
+  .wrapper {
+    overflow-x: hidden;
+  }
+  .filter {
+    width: 15rem;
+    padding: 10px;
+  }
+  .cards-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .product-card-footer {
+    padding: 0;
+  }
+  .card {
+    width: 12rem;
+    height: fit-content;
+  }
+  .product-page {
+    margin: 1rem;
+  }
+  .card-padding {
+    padding: 12px 12px 0 12px;
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  .wrapper {
+    overflow-x: hidden;
+  }
+  .filter {
+    display: none;
+  }
+  .cards-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 17rem;
+    height: auto;
+  }
+  .product-page {
+    margin: 1rem;
+  }
+  .card-padding {
+    margin: 0.6rem 0.6rem 0 0.6rem;
+  }
+  .product-page {
+    margin: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .wrapper {
+    overflow-x: hidden;
+  }
+  .filter {
+    display: none;
+  }
+  .cards-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 14rem;
+    height: auto;
+  }
+  .product-page {
+    margin: 1rem;
+  }
+  .card-padding {
+    padding: 10px 10px 0 10px;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .filter {
+    display: none;
+  }
+  .cards-list {
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 1.5rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    width: 15rem;
+    height: auto;
+    margin: 1rem;
+  }
+  .product-page {
+    margin: 0.6rem;
+  }
+  .card-padding {
+    padding: 0.8rem 0.8rem 0 0.8rem;
+  }
 }
