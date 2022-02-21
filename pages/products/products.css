@@ -145,6 +145,10 @@ body {
   height: 25.6rem;
 }
 
+.hide-icon{
+  display: none;
+}
+
 @media only screen and (max-width: 64em) {
   .wrapper {
     overflow-x: hidden;
@@ -250,8 +254,13 @@ body {
   }
   .product-page {
     margin: 0.6rem;
+    justify-content: center;
+    align-items: center;
   }
   .card-padding {
     padding: 0.8rem 0.8rem 0 0.8rem;
+  }
+  .hide-icon{
+    display: none;
   }
 }

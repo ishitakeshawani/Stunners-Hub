@@ -17,6 +17,7 @@ body {
 
 .navbar {
   padding: 0;
+  z-index: 10;
 }
 
 .nav-link,
@@ -27,7 +28,6 @@ body {
 .active {
   color: var(--pink-color);
 }
-
 
 .footer {
   background-color: var(--pink-color);
@@ -66,10 +66,44 @@ body {
   object-fit: cover;
 }
 
+@media only screen and (max-width: 64rem) {
+  .wishlist {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+  }
+  .card {
+    width: 15rem;
+  }
+  .card-padding {
+    padding: 10px 10px 0 10px;
+  }
+  .product-card-footer {
+    padding: 0;
+  }
+}
+
 @media only screen and (max-width: 48rem) {
   .wishlist {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto auto;
     gap: 1rem;
+  }
+  .card {
+    width: 15rem;
+  }
+  .card-padding {
+    padding: 10px 10px 0 10px;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .wishlist {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+  }
+  .card {
+    width: 17rem;
   }
 }
