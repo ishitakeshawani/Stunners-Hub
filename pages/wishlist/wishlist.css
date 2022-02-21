@@ -28,6 +28,7 @@ body {
   color: var(--pink-color);
 }
 
+
 .footer {
   background-color: var(--pink-color);
   color: var(--white);
@@ -39,7 +40,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 0.5rem;
+  row-gap: 1rem;
+  font-size: 1.1rem;
 }
 
 .footer-icon {
@@ -48,7 +50,7 @@ body {
 
 .footer-social-icon {
   color: var(--white);
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 0 0.5rem;
 }
 
