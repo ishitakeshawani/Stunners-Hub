@@ -267,7 +267,7 @@ body {
     align-items: center;
     z-index: 2;
     background: var(--white);
-    transition: top 1s ease;
+    transition: all 0.3s ease-in-out;
     display: none;
   }
   .closeMenu {
@@ -280,7 +280,6 @@ body {
     /* display: flex; */
     position: absolute;
     right: 20px;
-    top: 5px;
   }
   .openMenu {
     display: block;
