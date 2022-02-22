@@ -13,7 +13,7 @@ function show(){
 }
 
 function close(){
-    mainMenu.style.top = '-150%';
+    mainMenu.style.top = '-130%';
 }
 
 function searchItem(){
