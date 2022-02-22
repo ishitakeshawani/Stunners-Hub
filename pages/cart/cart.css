@@ -203,6 +203,7 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   overflow: hidden;
+  display: none;
 }
 
 .modal-content{
