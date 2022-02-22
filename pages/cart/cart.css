@@ -8,6 +8,7 @@
   --pink-color: #fc2678;
   --bg-color: #402f27;
   --product-bgcolor: #f2f2f3;
+  --card-box-shadow: rgb(0 0 0 / 10%);
 }
 
 body {
@@ -39,7 +40,7 @@ body {
   align-items: center;
   justify-content: center;
   background: var(--white);
-  box-shadow: 0px 2px 3px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0px 2px 3px 0 var(--card-box-shadow);
   width: 90%;
 }
 
@@ -198,15 +199,12 @@ body {
   width: 70%;
 }
 
-.modal{
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  overflow: hidden;
+.modal {
   display: none;
+  overflow: hidden;
 }
 
-.modal-content{
+.modal-content {
   background-color: var(--product-bgcolor);
   display: flex;
   flex-direction: column;
@@ -217,31 +215,31 @@ body {
   border-radius: 5px;
 }
 
-.input{
+.input {
   width: 20rem;
   margin: 0.5rem 0;
 }
 
-.input-address{
+.input-address {
   height: 7rem;
   width: 20rem;
 }
 
-.name-label{
+.name-label {
   font-size: 1.1rem;
   color: var(--bg-color);
   font-weight: 500;
   margin-bottom: 1rem;
 }
 
-.cancel-btn{
+.cancel-btn {
   background-color: var(--product-bgcolor);
   color: var(--bg-color);
   border-radius: 5xp;
   border: 1px solid var(--bg-color);
 }
 
-.save-btn{
+.save-btn {
   background-color: var(--pink-color);
   border-radius: 5px;
 }
@@ -258,22 +256,27 @@ body {
   .hide-icon {
     display: none;
   }
-  .modal-content{
+  .modal-content {
     width: 70%;
   }
-  .input{
+  .input {
     width: 10rem;
     height: 1rem;
   }
-  .input-address{
+  .input-address {
     width: 10rem;
     height: 5rem;
   }
-  .name-label{
+  .name-label {
     font-size: 13px;
   }
-  .btn{
+  .btn {
     padding: 2px 10px;
   }
-
+  .modal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
 }
