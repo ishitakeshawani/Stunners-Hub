@@ -17,6 +17,5 @@ function close(){
 }
 
 function searchItem(){
-    console.log("hugf");
     location.href = "/pages/Search/search.html";
 }
