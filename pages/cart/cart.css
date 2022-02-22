@@ -47,7 +47,7 @@ body {
 .cart-product-details {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 2rem;
   row-gap: 1rem;
   width: 20rem;
 }
@@ -276,5 +276,14 @@ body {
   .modal {
     display: none;
     overflow: hidden;
+  }
+  .address{
+    width: 100%;
+  }
+  .cart-product-card{
+    max-width: 15rem;
+  }
+  .cart-product-details{
+    max-width: 15rem;
   }
 }
