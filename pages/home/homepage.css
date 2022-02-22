@@ -267,7 +267,7 @@ body {
     align-items: center;
     z-index: 2;
     background: var(--white);
-    transition: all 0.3s ease-in-out;
+    transition: all 1s ease-in-out;
     display: none;
   }
   .closeMenu {
