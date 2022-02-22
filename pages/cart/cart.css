@@ -235,7 +235,7 @@ body {
 .cancel-btn {
   background-color: var(--product-bgcolor);
   color: var(--bg-color);
-  border-radius: 5xp;
+  border-radius: 5px;
   border: 1px solid var(--bg-color);
 }
 
